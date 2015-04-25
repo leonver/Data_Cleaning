@@ -49,7 +49,7 @@ and activity. the number of variables of the result dataset is 35
   variable names      | data
   --------------------|--------------
   `subject`           | 2
-  `activity'          | STANDING
+  `activity`          | STANDING
   `tBodyAcc-mean()-X` | 0.257
   `tBodyAcc-mean()-Y` | -0.0233
   `tBodyAcc-mean()-Z` | -0.0147
