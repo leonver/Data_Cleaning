@@ -21,6 +21,7 @@ The subjects, activities and measurements given in six diferent files are combin
 The column names are replace by "subject", "activity" and the names given in the data set "features.txt"
 
 The activity is a value from 1 to 6, There is also a file with a label for each value.
+
 1 WALKING
 
 2 WALKING_UPSTAIRS
@@ -43,10 +44,12 @@ and activity. the number of variables of the result dataset is 35
 
 #### Sample of variables compared to original variable name
 
-  Result data set     | data
+  Result data set
+  
+  variable names      | data
   --------------------|--------------
   `subject`           | 2
-  `activity           | STANDING
+  `activity'          | STANDING
   `tBodyAcc-mean()-X` | 0.257
   `tBodyAcc-mean()-Y` | -0.0233
   `tBodyAcc-mean()-Z` | -0.0147
