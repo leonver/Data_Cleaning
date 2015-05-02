@@ -120,10 +120,9 @@ if (!file.exists(dataset.zip))
 
 ## 5.From the data set in step 4, creates a second, independent tidy data set 
 ##     with the average of each variable for each activity and each subject.
-    sel_vars <- grep("mean[/(/)]",colnames(sel_data),value=T)
-    sel_data2 = sel_data[c("subjects", "activity", sel_vars)]
-
-    write.csv(sel_data2,"tidy_data_set.txt",row.names=FALSE)
+    library(plyr)
+    Avg_data <- ddply(sel_data, .(subjects, activity, function(x) colmeans(3:68)))        
+    write.csv(avg_data,"tidy_data_set.txt",row.names=FALSE)
     
     #remove help files
     rm(merged_data, sel_data)
