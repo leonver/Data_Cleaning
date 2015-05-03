@@ -121,7 +121,7 @@ if (!file.exists(dataset.zip))
 ## 5.From the data set in step 4, creates a second, independent tidy data set 
 ##     with the average of each variable for each activity and each subject.
     library(plyr)
-    Avg_data <- ddply(sel_data, .(subjects, activity, function(x) colmeans(3:68)))        
+    avg_data <- ddply(sel_data, .(subjects, activity), function(x) colMeans(x[3:68]))  
     write.csv(avg_data,"tidy_data_set.txt",row.names=FALSE)
     
     #remove help files
